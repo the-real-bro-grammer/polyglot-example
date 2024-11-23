@@ -1,4 +1,5 @@
 import MainLayout from '@/layouts/MainLayout';
+import '@/lib/helpers/init_fa';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import type { ReactElement, ReactNode } from 'react';

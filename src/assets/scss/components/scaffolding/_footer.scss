@@ -1,0 +1,51 @@
+.footer {
+    background-color: #f7f7f7;
+
+    h6 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-size: 0.9rem;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    a {
+        color: #555;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .d-flex span {
+        font-size: 0.9rem;
+        color: #333;
+    }
+
+    .fa-facebook,
+    .fa-twitter,
+    .fa-instagram {
+        font-size: 1.25rem;
+        color: #555;
+        cursor: pointer;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}

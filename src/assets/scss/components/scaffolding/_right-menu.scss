@@ -1,0 +1,13 @@
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Adjust spacing between items */
+}
+
+.right-menu .menu-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 0.25rem 0.75rem;
+}

@@ -1,0 +1,15 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between logo and text */
+}
+
+.logo-container img {
+    height: 30px; /* Ensure the logo size matches */
+}
+
+.logo-container span {
+    font-size: 1.25rem; /* Match Airbnb font size */
+    color: #ff5a5f;
+    font-weight: bold;
+}
