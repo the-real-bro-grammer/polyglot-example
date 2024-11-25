@@ -32,11 +32,18 @@
         }
     }
 
-    .d-flex span {
+    // Bottom Section
+    .d-flex {
+        flex-wrap: wrap; /* For responsiveness */
+        gap: 1rem; /* Add consistent spacing */
+    }
+
+    span {
         font-size: 0.9rem;
         color: #333;
     }
 
+    // Social Icons
     .fa-facebook,
     .fa-twitter,
     .fa-instagram {
@@ -46,6 +53,33 @@
 
         &:hover {
             color: #000;
+        }
+    }
+
+    // Terms
+    .text-center {
+        font-size: 0.9rem;
+        color: #333;
+
+        a {
+            font-size: 0.9rem;
+            color: #555;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // Responsive Adjustments
+    @media (max-width: 768px) {
+        .d-flex {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .text-center {
+            text-align: left;
         }
     }
 }

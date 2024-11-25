@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className='footer py-4 border-top'>
             {/* Top Section: Links */}
             <div className='container'>
-                <div className='row'>
+                <div className='row text-left'>
                     {/* Column 1 */}
                     <div className='col-12 col-md-4 mb-4 mb-md-0'>
                         <h6 className='fw-bold'>Support</h6>
@@ -53,17 +53,17 @@ const Footer = () => {
             <div className='container mt-4'>
                 <div className='d-flex flex-column flex-md-row justify-content-between align-items-center'>
                     {/* Left: Language and Currency */}
-                    <div className='d-flex align-items-center mb-3 mb-md-0'>
-                        <FontAwesomeIcon icon={faGlobe} className='me-2' />
-                        <span className='me-4'>English (US)</span>
-                        <FontAwesomeIcon icon={faDollarSign} className='me-2' />
+                    <div className='d-flex align-items-center mb-3 mb-md-0 gap-3'>
+                        <FontAwesomeIcon icon={faGlobe} />
+                        <span>English (US)</span>
+                        <FontAwesomeIcon icon={faDollarSign} />
                         <span>USD</span>
                     </div>
 
                     {/* Center: Social Links */}
-                    <div className='d-flex align-items-center mb-3 mb-md-0'>
-                        <FontAwesomeIcon icon={faFacebook} className='me-3' />
-                        <FontAwesomeIcon icon={faTwitter} className='me-3' />
+                    <div className='d-flex align-items-center gap-3'>
+                        <FontAwesomeIcon icon={faFacebook} />
+                        <FontAwesomeIcon icon={faTwitter} />
                         <FontAwesomeIcon icon={faInstagram} />
                     </div>
 

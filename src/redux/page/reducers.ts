@@ -1,8 +1,9 @@
+import { Reducer } from '@reduxjs/toolkit/react';
 import { PAGE_SETTINGS_UPDATE, PageSettingsAction } from '../../types/redux/page/action_types';
 import { PageSettingsState } from '../../types/redux/page/state';
 import { getInitialPageSettingsState } from './initial_state';
 
-export const pageSettingsReducer = (
+export const pageSettingsReducer: Reducer<PageSettingsState, PageSettingsAction> = (
     state = getInitialPageSettingsState(),
     action: PageSettingsAction
 ): PageSettingsState => {

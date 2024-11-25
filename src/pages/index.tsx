@@ -1,7 +1,7 @@
 import type { NextPageWithLayout } from './_app';
 
-const Page: NextPageWithLayout = () => {
-    return <p>hello world</p>;
+const Home: NextPageWithLayout = () => {
+    return <p>home page</p>;
 };
 
-export default Page;
+export default Home;

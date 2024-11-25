@@ -11,7 +11,9 @@ const MainLayout: ReactLayout<MainLayoutProps> = (props: MainLayoutProps) => {
     return (
         <>
             <AirbnbHeader />
-            <div className='container'>{props.children}</div>
+            <main id='siteContent' className='px-4'>
+                {props.children}
+            </main>
             <Footer />
         </>
     );

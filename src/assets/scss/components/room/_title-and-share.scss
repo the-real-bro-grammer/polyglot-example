@@ -1,0 +1,27 @@
+.title-and-share {
+    .room-title {
+        font-size: 1.75rem; /* Matches Airbnb's heading size */
+        font-weight: 600; /* Semi-bold to align with Airbnb style */
+        color: #333; /* Primary text color */
+        margin: 0;
+    }
+
+    .btn {
+        font-size: 0.875rem; /* Smaller text size for buttons */
+        color: #333; /* Matches Airbnb button text color */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: #f7f7f7; /* Slight hover effect */
+        }
+
+        i {
+            font-size: 1rem; /* Icon size for buttons */
+        }
+    }
+}
