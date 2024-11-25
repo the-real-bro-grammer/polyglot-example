@@ -1,0 +1,79 @@
+.room-details {
+    h2.room-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    p.room-info {
+        color: #717171;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .guest-favorite {
+        font-size: 0.9rem;
+        .badge {
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+            padding: 0.25rem 0.5rem;
+        }
+    }
+
+    .ratings-host {
+        .ratings {
+            font-size: 1rem;
+            strong {
+                font-size: 1.1rem;
+            }
+        }
+        .host-info {
+            display: flex;
+            align-items: center;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+            }
+            strong {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 0.85rem;
+                color: #717171;
+            }
+        }
+    }
+
+    .details-section {
+        .detail-item {
+            font-size: 1rem;
+            i {
+                font-size: 1.5rem;
+                color: #ff385c; /* Airbnb red */
+            }
+            strong {
+                font-size: 1rem;
+                display: block;
+            }
+            p {
+                font-size: 0.85rem;
+                color: #717171;
+            }
+        }
+    }
+
+    .description-section {
+        font-size: 0.95rem;
+        color: #333;
+        margin-top: 1rem;
+        a {
+            font-weight: 600;
+            color: #ff385c; /* Airbnb red */
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
