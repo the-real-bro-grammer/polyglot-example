@@ -1,7 +1,23 @@
+import { requestPhrase } from '@/redux/i18n/actions';
+import I18nState from '@/types/redux/i18n/state';
+import { RootState } from '@/types/redux/root_state';
 import { faCalendarAlt, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FC } from 'react';
+import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
-const SearchBar = () => {
+interface SearchBarProps {
+    requestPhrase: (key: string) => void;
+    i18nState: I18nState;
+}
+
+const phraseKey = 'searchBar';
+const SearchBar: FC<SearchBarProps> = (props: SearchBarProps) => {
+    if (!props.i18nState.polyglot.has(phraseKey)) {
+        props.requestPhrase(phraseKey);
+    }
+
     return (
         <div className='search-bar d-flex align-items-center border rounded-pill shadow-sm px-3'>
             {/* Section 1: Location */}
@@ -35,4 +51,16 @@ const SearchBar = () => {
     );
 };
 
-export default SearchBar;
+const mapStateToProps = (state: RootState) => {
+    return {
+        i18nState: state.i18nState
+    };
+};
+
+const mapDispatchToProps = (dispatch: Dispatch<any>) => {
+    return {
+        requestPhrase: (key: string) => dispatch(requestPhrase(key))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
